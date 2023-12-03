@@ -1,18 +1,11 @@
-package patronComposite;
+package patronComposite.Exercicemodifié;
 
-public class FichierTXT extends Fichier {
+public class FichierCVS extends Fichier {
 
-	
-	
-	
-	
-
-
-	public FichierTXT(String nom) {
+	public FichierCVS(String nom) {
 		super();
 		this.nom = nom;
-		this.type="txt";
-		
+		this.type="cvs";
 	}
 
 

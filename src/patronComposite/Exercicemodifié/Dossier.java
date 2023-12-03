@@ -1,4 +1,4 @@
-package patronComposite;
+package patronComposite.Exercicemodifié;
 
 import java.util.ArrayList;
 import java.util.Collection;

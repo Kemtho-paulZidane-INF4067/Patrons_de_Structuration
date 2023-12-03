@@ -1,4 +1,4 @@
-package patronComposite;
+package patronComposite.Exercicemodifié;
 
 public class Fichierpdf extends Fichier {
 

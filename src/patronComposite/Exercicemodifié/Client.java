@@ -1,4 +1,4 @@
-package patronComposite;
+package patronComposite.Exercicemodifié;
 
 public class Client {
 
@@ -7,24 +7,35 @@ public class Client {
 		
 		//création d'un fichierpdf
 		System.out.println("      creation du ficfhier patron_de_structuration.pdf et description    \n");
-		Component fichier=new Fichierpdf("patron_de_structuration");
+		Fichier fichier=new Fichierpdf("patron_de_structuration");
 		fichier.Decrire();
 		System.out.println("           \n");
 		
 		System.out.println("      creation du ficfhier patron_de_structuration.txt et description    \n");
 		//création d'un fichierTXT
-				Component fichiertxt=new FichierTXT("patron_de_structuration");
+			Fichier fichiertxt=new FichierTXT("patron_de_structuration");
 				fichiertxt.Decrire();
 				
 				System.out.println("           \n");
 				
+				System.out.println("      creation du ficfhier patron_de_structuration.cvs et description    \n");
+				//création d'un fichierTXT
+					Fichier fichiercvs=new FichierCVS("patron_de_structuration");
+						fichiercvs.Decrire();
+						
+						System.out.println("           \n");
+						
+				
 	    //création d'un dossier
-				System.out.println("      creation du Dossier patron_de_structuration en y ajoutant les deux fichiers precédent    \n");
+				System.out.println("      creation du Dossier patron_de_structuration en y ajoutant les trois fichiers precédent    \n");
 				Dossier dossier=new Dossier("patrons_de_structuration");
 	    //ajouter du premier fichier à au dossier
 				dossier.Ajouter(fichier);	
 	  //ajout du deusieme fichier au dossier
 				dossier.Ajouter(fichiertxt);
+				//ajout du  fichier  cvs au dossier
+				dossier.Ajouter(fichiercvs);
+				
 				System.out.println("    description du dossier   patron_de_structuration     \n");
 				dossier.Decrire();
 				
@@ -75,7 +86,7 @@ System.out.println("    suppression du fichier patron_de_structuration.pdf dans 
 								dossier1.Decrire();
 								
 								
-				//retourner le premier élement du dossier patron de construnction
+				//retourner le premier élement du dossier patron de construction
 								System.out.println(" description du   premier élement du dossier   patron_de_conception     \n");
 								dossier1.Obtenir(0).Decrire();
 			    //description du deuxieme élement du dossier patrons de structuration contenu dans le dossier patron de conception	

@@ -1,4 +1,4 @@
-package patronComposite;
+package patronComposite.Exercice;
 
 public abstract class Component {
 
